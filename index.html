@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculatrice</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body id="myBody" class="theme1">
+    <div id="calc" class="calculatrice theme1">
+      
+        <div class="toggle-container">
+            <div class="toggle-options">
+              <span class="toggle-option">1</span>
+              <span class="toggle-option">2</span>
+              <span class="toggle-option">3</span>
+            </div>
+            
+            <div class="toggle-button">
+                <span class="calculator-text">Calculator</span>
+                <div class="theme-text">Thème</div>
+              <div class="indicator"></div>
+              <div class="indicator1"></div>
+              <div class="indicator2"></div>
+            </div>
+          </div>
+        <input type="text" name="" id="input-result" class="" readonly>
+        <div class="buttons">
+            <button class="chiffre" onclick="appendNumber('7')">7</button>
+            <button class="chiffre" onclick="appendNumber('8')">8</button>
+            <button class="chiffre" onclick="appendNumber('9')">9</button>
+            <button class="reset" onclick="effacerElement()">DEL</button>
+            <button class="chiffre" onclick="appendNumber('4')">4</button>
+            <button class="chiffre" onclick="appendNumber('5')">5</button>
+            <button class="chiffre" onclick="appendNumber('6')">6</button>
+            <button class="operateur" onclick="appendOperator('+')">+</button>
+            <button class="chiffre" onclick="appendNumber('1')">1</button>
+            <button class="chiffre" onclick="appendNumber('2')">2</button>
+            <button class="chiffre" onclick="appendNumber('3')">3</button>
+            <button class="operateur" onclick="appendOperator('-')">-</button>
+            <button class="operateur" onclick="appendNumber('.')">.</button>
+            <button class="chiffre" onclick="appendNumber('0')">0</button>
+            <button class="operateur" onclick="appendOperator('/')">/</button>
+            <button class="operateur" onclick="appendOperator('*')">*</button>
+            <div class="last-button">
+                <button class="reset" onclick="effacerInput()">RESET</button>
+            <button class="egale" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+
+        <script src="app.js"></script>
+</body>
+
+</html>

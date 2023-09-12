@@ -1,0 +1,329 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.calculatrice {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-result {
+    font-size: 32px;
+    width: 85%;
+    height: 80px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    text-align: end;
+    padding-right: 8px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.buttons {
+    height: 230px;
+    display: grid; 
+    grid-template-columns: 60px 60px 60px 60px;
+    grid-template-rows: 37px 37px 37px 37px;
+    justify-content: center;
+    gap: 10px;
+    padding: 13px;
+    margin-top: 25px;
+    border-radius: 7px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.last-button {
+    display: grid;
+    grid-template-columns: 128px 135px;
+    grid-template-rows: 37px 37px;
+    gap: 7px;
+    padding: 4px;
+    padding-left: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.chiffre {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.operateur,
+.egale,
+.reset {
+    font-size: 20px;
+    font-family: 'League Spartan', sans-serif;
+    font-weight: 700;
+}
+
+.egale {
+    margin-left: 7px;
+}
+
+.buttons button {
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.toggle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .theme-text {
+    margin-left: -54px;
+    margin-top: -25px;
+
+  }
+
+  .calculator-text {
+    margin-left: -240px;
+    font-size: 25px;
+  }
+  
+  .toggle-options {
+    display: flex;
+    margin-bottom: -5px;
+    margin-left: 234px;
+  }
+  
+  .toggle-option {
+    padding: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle-button {
+    position: relative;
+    width: 60px;
+    height: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 240px;
+    margin-bottom: 30px;
+  }
+  
+  .indicator {
+    position: absolute;
+    top: 2px;
+    left: 10px;
+    width: 13px;
+    height: 10px;
+    border-radius: 50%;
+    transition: left 0.3s ease-in-out;
+    transform: translateX(-50%);
+  }
+
+
+  .indicator1 {
+    position: absolute;
+    top: 2px;
+    left: 20px;
+    width: 13px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+
+  .indicator2 {
+    position: absolute;
+    top: 2px;
+    left: 38px;
+    width: 13px;
+    height: 10px;
+    border-radius: 50%;
+  }
+
+.theme1 {
+    background-color: hsl(222, 26%, 31%);
+}
+
+.theme1 .calculator-text, .theme-text {
+    color: hsl(0, 0%, 100%);
+}
+
+.theme1 .toggle-option{
+    color: hsl(0, 0%, 100%);
+}
+
+.theme1 .toggle-button, .buttons {
+    background-color: hsl(223, 31%, 20%);
+}
+
+.theme1 .indicator {
+    background-color:  hsl(6, 63%, 50%);
+}
+
+.theme1 #input-result {
+    background-color: hsl(224, 36%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+.theme1 .chiffre {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0px 3px hsl(224, 28%, 35%);
+}
+
+.theme1 .operateur {
+    background-color: hsl(30, 25%, 89%);
+    color: hsl(221, 14%, 31%);
+    box-shadow: 0px 3px hsl(224, 28%, 35%);
+} 
+
+
+.theme1 .egale {
+    background-color: hsl(19, 100%, 53%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
+}
+
+.theme1 .reset {
+    background-color: hsl(185, 42%, 37%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 3px hsl(224, 28%, 35%);
+}
+
+
+
+
+.theme2 {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.theme2 .toggle-button {
+    background-color: hsl(0, 5%, 81%);;
+}
+
+.theme2 #input-result{
+    background-color:  hsl(0, 0%, 93%);
+    color: hsl(60, 10%, 19%);
+}
+
+.theme2 .indicator1 {
+    background-color: hsl(25, 98%, 40%);
+}
+
+.theme2 .calculator-text{
+    color: hsl(60, 10%, 19%);
+}
+
+.theme2 .theme-text {
+    color: hsl(60, 10%, 19%);
+}
+
+.theme2 .toggle-option{
+    color: hsl(60, 10%, 19%);
+}
+
+.theme2 .buttons {
+    background-color: hsl(0, 5%, 81%);
+    color: hsl(60, 10%, 19%);
+}
+
+.theme2 .chiffre {
+    background-color:   hsl(0, 0%, 100%);
+    color: hsl(60, 10%, 19%);
+    box-shadow: 0px 3px  hsl(185, 58%, 25%);
+   
+}
+
+
+.theme2 .operateur {
+    background-color:   hsl(0, 0%, 100%);
+    color: hsl(60, 10%, 19%);
+    box-shadow: 0px 3px  hsl(185, 58%, 25%);
+}
+
+.theme2 .reset {
+    background-color:   hsl(185, 42%, 37%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 3px  hsl(185, 58%, 25%);
+}
+
+.theme2 .egale {
+    background-color: hsl(25, 98%, 40%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 3px hsl(6, 70%, 34%);
+   
+}
+
+
+
+
+
+.theme3 {
+    background-color: hsl(268, 75%, 9%);
+}
+
+.theme3 .toggle-button, #input-result {
+    background-color:  hsl(268, 71%, 12%);
+}
+
+.theme3 .buttons {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.theme3 .indicator2 {
+    background-color: hsl(176, 100%, 44%);
+}
+
+.theme3 .calculator-text,  .toggle-option, #input-result {
+    color: hsl(52, 100%, 62%);
+}
+
+.theme3 .theme-text {
+    color: hsl(52, 100%, 62%);
+}
+
+.theme3 .chiffre{
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 0px 3px hsl(285, 91%, 52%);
+}
+
+.theme3 .chiffre:active {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.theme3 .operateur {
+    background-color: hsl(268, 47%, 21%);
+    color: hsl(52, 100%, 62%);
+    box-shadow: 0px 3px hsl(285, 91%, 52%);
+  
+}
+
+.theme3 .operateur:active {
+    background-color: hsl(268, 71%, 12%);
+}
+
+.theme3 .egale {
+    background-color: hsl(176, 100%, 44%);
+    color: hsl(0, 0%, 100%);
+} 
+
+.theme3 .reset {
+    background-color:  hsl(268, 47%, 21%);
+    color: hsl(0, 0%, 100%);
+    box-shadow: 0px 3px hsl(290, 70%, 36%);
+  
+}
+
+.theme3 .reset:active {
+    background-color: hsl(268, 71%, 12%);
+}
