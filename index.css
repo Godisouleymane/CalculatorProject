@@ -60,7 +60,8 @@ body {
 
 .operateur,
 .egale,
-.reset {
+.reset,
+.clear {
     font-size: 20px;
     font-family: 'League Spartan', sans-serif;
     font-weight: 700;
@@ -193,7 +194,7 @@ body {
     box-shadow: 0px 3px hsl(6, 70%, 34%);
 }
 
-.theme1 .reset {
+.theme1 .reset, .clear {
     background-color: hsl(185, 42%, 37%);
     color: hsl(0, 0%, 100%);
     box-shadow: 0px 3px hsl(224, 28%, 35%);
@@ -250,7 +251,9 @@ body {
     box-shadow: 0px 3px  hsl(185, 58%, 25%);
 }
 
-.theme2 .reset {
+.theme2 
+.reset,
+.clear {
     background-color:   hsl(185, 42%, 37%);
     color: hsl(0, 0%, 100%);
     box-shadow: 0px 3px  hsl(185, 58%, 25%);
@@ -262,7 +265,6 @@ body {
     box-shadow: 0px 3px hsl(6, 70%, 34%);
    
 }
-
 
 
 
@@ -317,11 +319,17 @@ body {
     color: hsl(0, 0%, 100%);
 } 
 
-.theme3 .reset {
+.theme3 
+.reset {
     background-color:  hsl(268, 47%, 21%);
     color: hsl(0, 0%, 100%);
     box-shadow: 0px 3px hsl(290, 70%, 36%);
-  
+}
+
+.theme3 .clear {
+    background-color: hsl(268, 47%, 21%);
+        color: hsl(0, 0%, 100%);
+        box-shadow: 0px 3px hsl(290, 70%, 36%);
 }
 
 .theme3 .reset:active {

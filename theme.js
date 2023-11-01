@@ -5,6 +5,9 @@ const indicator2 = document.querySelector(".indicator2");
 const body = document.getElementById('myBody');
 const calculator = document.getElementById("calc");
 
+
+
+
 indicator.addEventListener("click", () => {
 
     body.classList.remove("theme1", "theme2", "theme3");
@@ -29,40 +32,3 @@ indicator2.addEventListener("click", () => {
     calculator.classList.remove("theme1", "theme2", "theme3");
     calculator.classList.add('theme3');
 });
-
-
-let valeurInput = ""
-
-function afficherResult() {
-    document.getElementById('input-result').value = valeurInput;
-}
-
-function appendNumber(number) {
-    valeurInput += number;
-    afficherResult();
-}
-
-function appendOperator(operator) {
-    valeurInput += operator
-    afficherResult();
-}
-
-function calculate() {
-    try {
-        valeurInput = eval(valeurInput)
-        afficherResult();
-    } catch (error) {
-        valeurInput = "ERROR"
-        afficherResult();
-    }
-}
-
-function effacerInput() {
-    valeurInput = '';
-    afficherResult();
-}
-
-function effacerElement() {
-    valeurInput = valeurInput.slice(0, -1);
-    afficherResult();
-}
