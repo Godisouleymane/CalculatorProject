@@ -35,7 +35,7 @@ function operateurPoint(point) {
             updateScreen(firstNumber);
         } else if (secondNumber === "" && currentOperation !== "" && check) {
             check = true;
-            secondNumber = "0."
+            secondNumber = "0.";
             updateScreen(secondNumber)
         } else if (!point.includes(secondNumber) && currentOperation !== "" && check) {
             secondNumber += point;
@@ -44,9 +44,20 @@ function operateurPoint(point) {
     }
 }
 
+function multiCalcul() {
+    if (firstNumber !== "" && currentOperation !== "") {
+        const resultatMultiCalcul = calculate(parseFloat(firstNumber), currentOperation, parseFloat(secondNumber || firstNumber));
+        updateScreen(resultatMultiCalcul);
+        firstNumber = resultatMultiCalcul;
+        secondNumber = "";
+    }
+}
+
+
 function chooseOperation(operation) {
     if (!resultat) {
         if (firstNumber !== "") {
+            multiCalcul()
             currentOperation = operation;
         }
     }
@@ -110,3 +121,5 @@ delBtn.addEventListener("click", () => {
     }
     updateScreen(ecran.value);
 });
+
+
