@@ -16,6 +16,7 @@ indicator.addEventListener("click", () => {
     calculator.classList.add('theme1');
 });
 
+
 indicator1.addEventListener("click", () => {
 
     body.classList.remove("theme1", "theme2", "theme3");
